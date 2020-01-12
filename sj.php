@@ -41,8 +41,6 @@ for ($i=0; $i < $Count; $i++) {
 }
   $arr['url'][$i] = $mp4;
   $json = json_encode($arr);
+  file_put_contents('mp4.json', $json);
 }
-
-file_put_contents('mp4.json', $json);
-
 ?>
